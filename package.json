@@ -1,6 +1,6 @@
 {
   "name": "react-guarded",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple guard component for react js.",
   "main": "build/index.js",
   "scripts": {
@@ -30,11 +30,8 @@
   },
   "homepage": "https://github.com/Aroin/react-guarded#readme",
   "peerDependencies": {
-    "react": "^15.5.4"
-  },
-  "dependencies": {
-    "react": "^15.5.4",
-    "webpack": "^2.6.1"
+    "react": "^16.3.0",
+    "react-dom": "^16.3.0"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
@@ -43,6 +40,7 @@
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-object-rest-spread": "^6.23.0",
     "babel-plugin-transform-react-jsx": "^6.24.1",
-    "babel-preset-env": "^1.5.1"
+    "babel-preset-env": "^1.5.1",
+    "webpack": "^2.6.1"
   }
 }
