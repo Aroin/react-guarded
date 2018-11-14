@@ -17,7 +17,7 @@ export class Permissions {
     }
 }
 
-class Guarded extends Component {
+export class Guarded extends Component {
 
     constructor(props) {
         super(props);
@@ -69,12 +69,11 @@ class Guarded extends Component {
         const { guarded } = this.state;
         return (
             <HAT>
-                {guarded && <Owner {...properties} >
+                {guarded && Owner && <Owner {...properties} >
                     {children}
                 </Owner>}
+                {guarded && !Owner && children}
             </HAT>
         );
     }
 }
-
-export default Guarded;
