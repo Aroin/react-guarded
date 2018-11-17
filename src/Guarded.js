@@ -19,8 +19,7 @@ export class Permissions {
 
 export class Guarded extends Component {
 
-    constructor(props) {
-        super(props);
+    componentWillMount() {
         this.setState({
             guarded: false
         });
@@ -44,6 +43,8 @@ export class Guarded extends Component {
                 _guarded = this._allOf(permissions);
             }
             this.setState({guarded: _guarded});
+        } else {
+            this.setState({guarded: true});
         }
     };
 
