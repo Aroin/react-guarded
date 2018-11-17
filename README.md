@@ -10,7 +10,7 @@ Simple Guard component for react js.
 Install eact-guarded via `npm`
 
 ````shell
-npm install eact-guarded --save
+npm install react-guarded --save
 ````
 
 ## Integration
