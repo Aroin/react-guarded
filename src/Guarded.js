@@ -9,8 +9,8 @@ const HAT = (props) => {
 };
 
 export class Permissions {
-    static push(key) {
-        _PERMISSIONS.push(key);
+    static push(item) {
+        _PERMISSIONS.push(item);
     }
 
     static insert(array) {
@@ -22,7 +22,7 @@ export class Permissions {
     }
 }
 
-export class ROLE {
+export class Role {
     static set(role) {
         _ROLE = role;
     }

@@ -1,6 +1,6 @@
 {
   "name": "react-guarded",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Simple guard component for react js.",
   "main": "build/bundle.js",
   "scripts": {
@@ -42,5 +42,6 @@
     "path": "^0.12.7",
     "webpack": "^4.5.0",
     "webpack-cli": "^2.0.14"
-  }
+  },
+  "typings": "./index.d.ts"
 }

@@ -7,7 +7,7 @@ Simple Guard component for react js.
 
 ## Installation:
 
-Install eact-guarded via `npm`
+Install react-guarded via `npm`
 
 ````shell
 npm install react-guarded --save
@@ -17,13 +17,13 @@ npm install react-guarded --save
 
 ```js
 // index.js
-import {Permissions, ROLE} from 'react-guarded';
+import {Permissions, Role} from 'react-guarded';
 
 
 Permissions.insert(['ADD', 'UPDATE']);
 // Set permissions for current user
 
-ROLE.set('admin');
+Role.set('admin');
 // set role for current user
 
 // app.component.js
