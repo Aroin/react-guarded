@@ -1,12 +1,12 @@
 {
   "name": "react-guarded",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Simple guard component for react js.",
   "main": "build/bundle.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack --watch",
-    "build": "webpack  --mode production"
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",

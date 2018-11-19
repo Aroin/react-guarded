@@ -1,6 +1,6 @@
 var path = require('path');
 module.exports = {
-  entry: './src/Gaurded.js',
+  entry: './src/Guarded.js',
   output: {
     path: path.resolve(__dirname, 'build'),
     filename: 'bundle.js',

@@ -17,11 +17,14 @@ npm install eact-guarded --save
 
 ```js
 // index.js
-import {Permissions} from 'react-guarded';
+import {Permissions, ROLE} from 'react-guarded';
 
 
 Permissions.insert(['ADD', 'UPDATE']);
 // Set permissions for current user
+
+ROLE.set('admin');
+// set role for current user
 
 // app.component.js
 import {Guarded} from 'react-guarded';
@@ -52,6 +55,14 @@ If oneOf properties are enabled, the existence of one of the permissions list is
 
 ```
  <Guarded oneOf permissions={['UPDATE', 'MODIFY']} > click update ...</Guarded>
+```
+
+**`hasRole`** - [**`?string[]`**] 
+
+Has role properties list all of roles for guarded area.
+
+```
+ <Guarded oneOf hasRole={['admin', 'user']} permissions={['UPDATE', 'MODIFY']} > click update ...</Guarded>
 ```
 
 
