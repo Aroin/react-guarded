@@ -2,7 +2,7 @@
 Simple Guard component for react js.
 
 
-[![NPM](https://nodei.co/npm/react-guarded.png?downloads=true&stars=true)](https://nodei.co/npm/hi-date/)
+[![NPM](https://nodei.co/npm/react-guarded.png?downloads=true&stars=true)](https://nodei.co/npm/react-guarded/)
 
 
 ## Installation:
@@ -10,7 +10,7 @@ Simple Guard component for react js.
 Install eact-guarded via `npm`
 
 ````shell
-npm install eact-guarded --save
+npm install react-guarded --save
 ````
 
 ## Integration
