@@ -1,34 +1,32 @@
 import React, { Component } from 'react';
 
-
-let _PERMISSIONS = [];
-let _ROLE = '';
-
 const HAT = (props) => {
     return props.children;
 };
 
 export class Permissions {
     static push(item) {
-        _PERMISSIONS.push(item);
+        var permissions = JSON.parse(localStorage.getItem('react_guarded_permissions'));
+        permissions.push(item);
+        localStorage.setItem('react_guarded_permissions', JSON.stringify(permissions));
     }
 
     static insert(array) {
-        array.forEach(it => _PERMISSIONS.push(it));
+        localStorage.setItem('react_guarded_permissions', JSON.stringify(array));
     }
 
     static get() {
-        return _PERMISSIONS;
+        return JSON.parse(localStorage.getItem('react_guarded_permissions'));
     }
 }
 
 export class Role {
     static set(role) {
-        _ROLE = role;
+        localStorage.setItem('react_guarded_role', role);
     }
 
     static get() {
-        return _ROLE;
+        return localStorage.getItem('react_guarded_role');
     }
 }
 
@@ -75,7 +73,7 @@ export class Guarded extends Component {
     }
 
     _exist(key) {
-        return _PERMISSIONS.filter(it => it === key).length > 0;
+        return Permissions.get().filter(it => it === key).length > 0;
     }
 
     _allOf(array) {
@@ -91,7 +89,7 @@ export class Guarded extends Component {
     }
 
     _hasRole(role) {
-        return _ROLE.filter(it => it === role).length > 0;
+        return Role.get().filter(it => it === role).length > 0;
     }
 
 
