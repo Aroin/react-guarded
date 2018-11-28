@@ -1,6 +1,6 @@
 {
   "name": "react-guarded",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Simple guard component for react js.",
   "main": "build/bundle.js",
   "scripts": {

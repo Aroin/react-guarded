@@ -41,6 +41,7 @@ export class Guarded extends Component {
 
     componentDidMount() {
         this.checkGaurd(this.props.permissions, this.props.oneOf);
+        this.checkRole(this.props.hasRole);
     }
 
     componentWillReceiveProps(newProps) {
@@ -89,7 +90,7 @@ export class Guarded extends Component {
     }
 
     _hasRole(role) {
-        return Role.get().filter(it => it === role).length > 0;
+        return Role.get() === role;
     }
 
 
